@@ -1,20 +1,67 @@
-@use 'breakpoints';
 @use 'typography';
 @use 'colors.scss';
+@forward 'breakpoints';
+@use 'breakpoints' as *;
 
 html {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    line-height: 1.3;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  line-height: 1.3;
+  color: var(--text-color);
+  background-color: var(--background);
+  background-image: url('@/assets/images/pattern-circle.svg'),
+    url('@/assets/images/pattern-lines.svg'), url('@/assets/images/pattern-squiggly-line-top.svg'),
+    url('@/assets/images/pattern-squiggly-line-bottom-desktop.svg'),
+    url('@/assets/images/background-desktop.png');
+  background-repeat: no-repeat;
+  background-position:
+    75% center,
+    top,
+    right 10%,
+    left bottom;
+  background-attachment: fixed;
+
+  div#app {
+    height: 100%;
+  }
+
+  /* breakpoints styling */
+  @media #{$mq-1024-down} {
+    background-image: url('@/assets/images/pattern-circle.svg'),
+      url('@/assets/images/pattern-lines.svg'),
+      url('@/assets/images/pattern-squiggly-line-top.svg'),
+      url('@/assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg'),
+      url('@/assets/images/background-tablet.png');
+    background-size: 30%, auto, 50%, 50%, auto;
+    background-position:
+      right 70%,
+      top,
+      right 10%,
+      left bottom;
+  }
+  @media #{$mq-480-down} {
+    background-image: url('@/assets/images/pattern-circle.svg'),
+      url('@/assets/images/pattern-lines.svg'),
+      url('@/assets/images/pattern-squiggly-line-top.svg'),
+      url('@/assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg'),
+      url('@/assets/images/background-mobile.png');
+  }
+}
+
+/* Helper Classes */
+.wl {
+  max-width: 1440px;
+  width: 100%;
 }

@@ -1,13 +1,25 @@
 :root {
-    /* Main Colors */
-    --neutral: #ffffff;
-    --neutral-300: #d2d1d6;
-    --neutral-500: #8784a4;
-    --neutral-700: #4b486a;
-    --neutral-900: #0c082b;
-    --orange-500: #f57261;
-    --orange-700: #e16151;
-    
-    /* Text Colors */
-    --gradient: linear-gradient(90deg, rgba(243,115,98,1) 28%, rgba(255,255,255,1) 100%);
+  /* Main Colors */
+  --neutral: #ffffff;
+  --neutral-300: #d2d1d6;
+  --neutral-500: #8784a4;
+  --neutral-700: #4b486a;
+  --neutral-900: #0c082b;
+  --orange-500: #f57261;
+  --orange-700: #e16151;
+
+  /* Text Colors */
+  --gradient: linear-gradient(90deg, rgba(243, 115, 98, 1) 28%, rgba(255, 255, 255, 1) 100%);
+
+  /* Variables */
+  --background: var(--neutral-900);
+  --text-color: var(--neutral-300);
+
+  /* Shading */
+  --neutral-10: #ffffff10;
+  --neutral-20: #ffffff20;
+  --neutral-25: #ffffff25;
+  --neutral-30: #ffffff30;
+  --neutral-40: #ffffff40;
+  --neutral-50: #ffffff50;
 }
