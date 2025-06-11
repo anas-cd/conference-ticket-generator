@@ -2,7 +2,7 @@
   <footer class="footerSection">
     <div id="attr" class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. Coded
-      by <a href="#">Your Name Here</a>.
+      by <a href="https://github.com/anas-cd" target="_blank">Anas Shamlan</a>.
     </div>
   </footer>
 </template>
